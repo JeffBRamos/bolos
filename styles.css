@@ -16,6 +16,10 @@ header {
 .nav a{
   display: none;
 }
+main{
+  display: grid;
+  place-items: center;
+}
 
 h2 {
   color: #d2d2d2;
