@@ -1,0 +1,641 @@
+/* Estilos globais */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #150027;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #3D315B;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+.nav a{
+  display: none;
+}
+
+h2 {
+  color: #d2d2d2;
+}
+
+label {
+  color: #ffffff;
+}
+
+p {
+  color: #b2b2b2;
+  font-size: 16px;
+}
+
+.p {
+  margin-top: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3D315B;
+  position: sticky;
+  top: 0;
+  padding: 18px;
+}
+
+nav ul {
+  display: flex;
+  width: 70vw;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 15px;
+  color: #FFF;
+}
+a:hover {
+  color: aqua;
+}
+
+/* USUARIOS */
+.usu {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.login,
+.register {
+  margin-right: 10px;
+}
+
+/* Estilos do banner */
+#banner {
+  background-image: url(banner.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Estilos das seções */
+section {
+  padding: 50px;
+}
+
+/* Estilos dos bolos */
+.bolo-card {
+  display: inline-block;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #F9C22E;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.bolo-card img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.bolo-card h3 {
+  color: #3D315B;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.bolo-card p {
+  color: #555;
+}
+
+.bolo-card a {
+  display: inline-block;
+  background-color: #3D315B;
+  color: #FFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Estilos do formulário de contato */
+form label,
+form input,
+form textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form button {
+  background-color: #3D315B;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#instagram-whatsapp {
+  padding: 50px;
+  text-align: center;
+}
+
+#instagram-whatsapp h2 {
+  color: #d2d2d2;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#instagram-whatsapp p {
+  color: #787878;
+  font-size: 16px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #3D315B;
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Dispositivos móveis com largura entre 320px e 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  header{
+    display: none;
+  }
+  section {
+    padding: 25px;
+  }
+  h1{
+    font-size: 30px;
+    border-bottom: 1px solid rgb(65, 65, 65);
+  }
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 15px;
+    text-align: center;
+  }
+  .bolo-card {
+    display: inline-block;
+    height: 20vh;
+    width: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #F9C22E;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  .nav {
+    background-color: #3D315B;
+    display: flex;
+    padding: 10px;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .nav a{
+    display: block;
+    color: #FFF;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  .login-usu, .register-usu{
+    margin-right: 10px;
+  }
+  .bolo-card img {
+    width: 70%;
+    border-radius: 50%;
+  }
+  .bolo-card h3 {
+    color: #3D315B;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .bolo-card a {
+    display: inline-block;
+    background-color: #3D315B;
+    color: #FFF;
+    font-size: 10px;
+    padding: 5px 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  .sobrebolo{
+    display: none;
+  }
+  p{
+    font-size: 10px;
+  }
+  #instagram-whatsapp {
+    padding: 25px;
+    text-align: center;
+  }
+  #instagram-whatsapp h2 {
+    color: #d2d2d2;
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  #instagram-whatsapp p {
+    color: #787878;
+    font-size: 7px;
+  }
+  .social-media {
+    margin-top: 10px;
+  }
+  .social-media a {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .social-media img {
+    width: 20px;
+    height: 20px;
+  }
+  footer {
+    background-color: #3D315B;
+    color: #FFF;
+    padding: 5px;
+    text-align: center;
+  }
+  footer p{
+    font-size: 7px;
+  }
+  #banner {
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+  }  
+  #sobre p{
+    text-align: left;
+  }
+}
+
+/* Dispositivos móveis com largura entre 481px e 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header{
+    display: none;
+  }
+  section {
+    padding: 40px;
+  }
+  h1{
+    font-size: 30px;
+    border-bottom: 1px solid rgb(65, 65, 65);
+  }
+  h2{
+    font-size: 25px;
+    text-align: center;
+  }
+  .bolo-card {
+    display: inline-block;
+    height: 20vh;
+    width: 150px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #F9C22E;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .nav {
+    background-color: #3D315B;
+    display: flex;
+    padding: 15px;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .nav a{
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+  }
+  .login-usu, .register-usu{
+    margin-right: 10px;
+  }
+  .bolo-card img {
+    width: 70%;
+    border-radius: 50%;
+  }
+  .bolo-card h3 {
+    color: #3D315B;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .bolo-card a {
+    display: inline-block;
+    background-color: #3D315B;
+    color: #FFF;
+    font-size: 16px;
+    padding: 5px 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  .sobrebolo{
+    display: none;
+  }
+  p{
+    font-size: 15px;
+  }
+  #instagram-whatsapp {
+    padding: 25px;
+    text-align: center;
+  }
+  #instagram-whatsapp h2 {
+    color: #d2d2d2;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  #instagram-whatsapp p {
+    color: #787878;
+    font-size: 12px;
+  }
+  .social-media {
+    margin-top: 10px;
+  }
+  .social-media a {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .social-media img {
+    width: 30px;
+    height: 30px;
+  }
+  footer {
+    background-color: #3D315B;
+    color: #FFF;
+    padding: 5px;
+    text-align: center;
+  }
+  footer p{
+    font-size: 13px;
+  }
+  #banner {
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+  }  
+  #sobre p{
+    text-align: left;
+  }
+}
+
+/* Dispositivos móveis com largura entre 769px e 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header{
+    display: none;
+  }
+  section {
+    padding: 40px;
+  }
+  h1{
+    font-size: 35px;
+    border-bottom: 1px solid rgb(65, 65, 65);
+  }
+  h2{
+    font-size: 30px;
+    text-align: center;
+  }
+  .nav {
+    background-color: #3D315B;
+    display: flex;
+    padding: 15px;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .nav a{
+    display: block;
+    color: #FFF;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .login-usu, .register-usu{
+    margin-right: 10px;
+  }
+  .bolo-card {
+    display: inline-block;
+    height: 27vh;
+    width: 200px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #F9C22E;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .bolo-card img {
+    width: 80%;
+    border-radius: 50%;
+  }
+  .bolo-card h3 {
+    color: #3D315B;
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  .bolo-card a {
+    display: inline-block;
+    background-color: #3D315B;
+    color: #FFF;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  .sobrebolo{
+    display: none;
+  }
+  p{
+    font-size: 20px;
+  }
+  #instagram-whatsapp {
+    padding: 25px;
+    text-align: center;
+  }
+  #instagram-whatsapp h2 {
+    color: #d2d2d2;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  #instagram-whatsapp p {
+    color: #787878;
+    font-size: 16px;
+  }
+  .social-media {
+    margin-top: 10px;
+  }
+  .social-media a {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .social-media img {
+    width: 50px;
+    height: 50px;
+  }
+  footer {
+    background-color: #3D315B;
+    color: #FFF;
+    padding: 5px;
+    text-align: center;
+  }
+  footer p{
+    font-size: 20px;
+  }
+  #banner {
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+  }  
+  #sobre p{
+    text-align: left;
+  }
+}
+
+/* Dispositivos móveis com largura entre 1025px e 1200px */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  header{
+    display: none;
+  }
+  section {
+    padding: 40px;
+  }
+  h1{
+    font-size: 40px;
+    border-bottom: 2px solid rgb(65, 65, 65);
+  }
+  h2{
+    font-size: 35px;
+    text-align: center;
+  }
+  .nav {
+    background-color: #3D315B;
+    display: flex;
+    padding: 20px;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .nav a{
+    display: block;
+    color: #FFF;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  .login-usu, .register-usu{
+    margin-right: 15px;
+  }
+  .bolo-card {
+    display: inline-block;
+    height: 27vh;
+    width: 300px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #F9C22E;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .bolo-card img {
+    width: 80%;
+    border-radius: 50%;
+  }
+  .bolo-card h3 {
+    color: #3D315B;
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  .bolo-card a {
+    display: inline-block;
+    background-color: #3D315B;
+    color: #FFF;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  .sobrebolo{
+    display: none;
+  }
+  p{
+    font-size: 25px;
+  }
+  #instagram-whatsapp {
+    padding: 25px;
+    text-align: center;
+  }
+  #instagram-whatsapp h2 {
+    color: #d2d2d2;
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  #instagram-whatsapp p {
+    color: #787878;
+    font-size: 20px;
+  }
+  .social-media {
+    margin-top: 10px;
+  }
+  .social-media a {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .social-media img {
+    width: 60px;
+    height: 60px;
+  }
+  footer {
+    background-color: #3D315B;
+    color: #FFF;
+    padding: 5px;
+    text-align: center;
+  }
+  footer p{
+    font-size: 20px;
+  }
+  #banner {
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+  }  
+  #sobre p{
+    text-align: left;
+  }
+}
